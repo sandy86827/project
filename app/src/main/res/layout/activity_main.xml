@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.com.lccnet.myproject2.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <tw.com.lccnet.myproject2.view.NoScrollViewPage
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+    </tw.com.lccnet.myproject2.view.NoScrollViewPage>
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_smart"
+            android:text="智能"
+            android:drawableTop="@drawable/ic_assignment_return_black_24dp"
+            style="@style/rb_style" />
+        <RadioButton
+            android:id="@+id/rb_service"
+            android:text="服務"
+            android:drawableTop="@drawable/rb_service"
+            style="@style/rb_style" />
+        <RadioButton
+            android:id="@+id/rb_setting"
+            android:text="設定"
+            android:drawableTop="@drawable/rb_setting"
+            style="@style/rb_style" />
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:text="新聞"
+            android:drawableTop="@drawable/ic_storage_black_24dp"
+            style="@style/rb_style" />
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:text="首頁"
+            android:drawableTop="@drawable/rb_home_checked"
+            style="@style/rb_style"/>
+    </RadioGroup>
+
+</LinearLayout>
